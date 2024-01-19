@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Web Saya</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">A</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">E-Sertificate</a></li>
+            </ul>
+            <a href="https://wa.me/6281387326841" class="action-btn">Contact Me</a>
+            <div class="togle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="https://wa.me/6281387326841" class="action-btn">Contact Me</a></li>
+        </div>
+    </header>
+    <div class="container">
+      <div class="astronaut">
+        <div class="helmet">
+          <div class="left-lug"></div>
+          <div class="right-lug"></div>
+          <div class="visor"></div>
+        </div>
+        <div class="neck"></div>
+        <div class="body">
+          <div class="left-arm">
+            <div class="shadow"></div>
+            <div class="hoop-1"></div>
+            <div class="hoop-2"></div>
+          </div>
+          <div class="right-arm">
+            <div class="shadow"></div>
+            <div class="hoop-1"></div>
+            <div class="hoop-2"></div>
+          </div>
+          <div class="chest-pack">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+            <div class="lower-console">
+              <div class="box1"></div>
+              <div class="box2"></div>
+              <div class="box3"></div>
+            </div>
+          </div>
+          <div class="belt">
+            <div class="loop1"></div>
+            <div class="loop2"></div>
+            <div class="loop3"></div>
+          </div>
+        </div>
+        
+        <div class="backpack"></div>
+        
+        <div class="legs">
+          <div class="thigh-gap"></div>
+          <div class="left-knee"></div>
+          <div class="right-knee"></div>
+          <div class="left-foot"></div>
+          <div class="right-foot"></div>
+        </div>
+      </div>
+      
+      <div class="planet1">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+      </div>
+      
+      <div class="planet2">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+        <div class="dot4"></div>
+        <div class="dot5"></div>
+      </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.togle_btn')
+        const toggleBtnIcon = document.querySelector('.togle_btn i')
+        const dropDOwnMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDOwnMenu.classList.toggle('open')
+            const isOpen = dropDOwnMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
