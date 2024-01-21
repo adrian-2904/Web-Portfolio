@@ -1,112 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Web Saya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">A</a></div>
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">E-Sertificate</a></li>
-            </ul>
-            <a href="https://wa.me/6281387326841" class="action-btn">Contact Me</a>
-            <div class="togle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-
-        <div class="dropdown_menu">
-            <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="https://wa.me/6281387326841" class="action-btn">Contact Me</a></li>
-        </div>
-    </header>
-    <div class="container">
-      <div class="astronaut">
-        <div class="helmet">
-          <div class="left-lug"></div>
-          <div class="right-lug"></div>
-          <div class="visor"></div>
-        </div>
-        <div class="neck"></div>
-        <div class="body">
-          <div class="left-arm">
-            <div class="shadow"></div>
-            <div class="hoop-1"></div>
-            <div class="hoop-2"></div>
-          </div>
-          <div class="right-arm">
-            <div class="shadow"></div>
-            <div class="hoop-1"></div>
-            <div class="hoop-2"></div>
-          </div>
-          <div class="chest-pack">
-            <div class="dot1"></div>
-            <div class="dot2"></div>
-            <div class="dot3"></div>
-            <div class="lower-console">
-              <div class="box1"></div>
-              <div class="box2"></div>
-              <div class="box3"></div>
-            </div>
-          </div>
-          <div class="belt">
-            <div class="loop1"></div>
-            <div class="loop2"></div>
-            <div class="loop3"></div>
-          </div>
-        </div>
-        
-        <div class="backpack"></div>
-        
-        <div class="legs">
-          <div class="thigh-gap"></div>
-          <div class="left-knee"></div>
-          <div class="right-knee"></div>
-          <div class="left-foot"></div>
-          <div class="right-foot"></div>
-        </div>
+  <!-- Navbar -->
+  <header class="header">
+    <a href="#" class="logo">Adrian.</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- Section Home -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Muhammad <br>Adrian Al-Farizi</span></h1>
+      <div class="text-animate">
+        <h3>Frontend Developer</h3>
       </div>
-      
-      <div class="planet1">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-        <div class="dot3"></div>
-      </div>
-      
-      <div class="planet2">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-        <div class="dot3"></div>
-        <div class="dot4"></div>
-        <div class="dot5"></div>
+      <p>I'm a web designer and I'm currently learning CSS, Javascript and Python
+      <div class="btn-box">
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="btn" onclick="project()">Portfolio</a>
       </div>
     </div>
+    <!-- Footer Section Home -->
+    <div class="home-sci">
+      <a href="https://www.instagram.com/_maa_29/"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.linkedin.com/in/muhammad-adrian-alfarizi-a10a302a7"><i class='bx bxl-linkedin' ></i></a>
+      <a href="https://github.com/adrian-2904"><i class='bx bxl-github' ></i></a>
+    </div>
+  </section>
+    <!-- Section About -->
+    <section class="about" id="about">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about-content">
+        <h3>Frontend Developer!</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Magni fuga nemo iste sit deleniti ab ipsum, corporis rerum eos, illo, 
+          quidem dolore! Vitae sapiente possimus dolore architecto iste amet ex maiores 
+          natus officiis eius, cumque deleniti eos, accusantium libero distinctio dicta. 
+          Voluptates tempore eos debitis ut omnis vero, modi rerum.</p>
+        <div class="btn-box btns">
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section Education -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Journey</span></h2>
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">Education</h3>
+          <div class="education-box">
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class='bx bx-calendar' ></i>2020-Now</div>
+                <h3>SMKS Darul Ma'arif</h3>
+                <p>Accounting major <br> I'm School In North Jakarta</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class='bx bx-calendar' ></i>2017-2019</div>
+                <h3>SMPI Al-Falah</h3>
+                <p>I'm School In Tangerang City</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class='bx bx-calendar' ></i>2011-2016</div>
+                <h3>MI Miftahul Jannah</h3>
+                <p>I'm School In North Jakarta</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>    
+    </section>
+
+    <!-- Section Skills -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">Coding Skills</h3>
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>CSS <span>73%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Javascript <span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Python <span>25%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div class="skills-column">
+          <h3 class="title">Profesional Skills</h3>
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Web Design <span>75%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Web Devepment <span>49%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Problem Solving <span>67%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>TOEFL <span>65%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Your Email" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="number" placeholder="Phone Number" required>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email Subject" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage" required></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Sumbit</button>
+        </div>
+      </form>
+    </section>
+
     <script>
-        const toggleBtn = document.querySelector('.togle_btn')
-        const toggleBtnIcon = document.querySelector('.togle_btn i')
-        const dropDOwnMenu = document.querySelector('.dropdown_menu')
+      let menuIcon = document.querySelector('#menu-icon')
+      let navbar = document.querySelector('.navbar')
 
-        toggleBtn.onclick = function(){
-            dropDOwnMenu.classList.toggle('open')
-            const isOpen = dropDOwnMenu.classList.contains('open')
+      menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+      }
 
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
+      function project(){
+        alert("there are no projects here")
+      }
     </script>
 </body>
 </html>
